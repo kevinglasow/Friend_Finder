@@ -3,6 +3,7 @@ $("#submit").on("click", function (event) {
     var newProfile = {
         name: $("#inputEmail").val().trim(),
         email: $("#photoURL").val().trim(),
+        answers:
         [
         $("#questionOne").val(),
         $("#questionTwo").val(),
