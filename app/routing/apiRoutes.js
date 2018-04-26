@@ -1,5 +1,5 @@
 var express = require('express');
-var tables = require('../data/friends.json');
+var friends = require('../data/friends.json');
 
 // var friends = []
 
