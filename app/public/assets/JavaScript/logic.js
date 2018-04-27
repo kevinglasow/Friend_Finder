@@ -1,5 +1,4 @@
 $("#submit").on("click", function (event) {
-
     var newProfile = {
         name: $("#inputEmail").val().trim(),
         email: $("#photoURL").val().trim(),
@@ -20,7 +19,9 @@ $("#submit").on("click", function (event) {
 
     console.log(newProfile);
 
-    $.post("/api/friends", newProfile)
+    $.post("/api/friends", newProfile, function(data) {
+        alert("Added!!")
+    })
     //     function (data) {
 
     //         // Clear the form when submitting

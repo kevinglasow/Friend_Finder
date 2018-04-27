@@ -7,6 +7,7 @@ var app = express();
 
 var port = process.env.PORT || 3000;
 
+app.use(express.static('./app/public/assets'))
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

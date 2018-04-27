@@ -12,7 +12,7 @@ module.exports = function () {
 
   router.post('/api/friends', function (req, res) {
     friends.push(req.body);
-    return res.json(true);
+    console.log(req.body)
   });
 
   return router;
